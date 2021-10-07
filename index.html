@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>Online-zoo</title>
+</head>
+<body>
+
+    <header class="header">
+      <div class="hamburger-menu">
+        <input id="nav-toggle" type="checkbox" />
+        <label class="nav-btn" for="nav-toggle">
+          <span></span>
+        </label>
+    
+        <ul class="nav-box">
+          <li><a class="nav-item" href="#">About</a></li>
+          <li><a class="nav-item" href="pages/map/map.html">Map</a></li>
+          <li><a class="nav-item" href="pages/zoos/panda/panda.html">Zoos</a></li>
+          <li><a class="nav-item" href="pages/Error_404/error.html">Contact us</a></li>
+          <li><a class="nav-item design" href="https://www.figma.com/file/aBvQMVmI665DtzprpiniuH/online-zoo?node-id=0%3A1">Design</a></li>
+        </ul>
+      </div>
+      <div class="header-logo">
+        <h1 class="online-zoo">Online Zoo</h1>
+        <a href="index.html" class="header-logo-link">
+          <img class="logo-img" src="assets/images/logo/logo.svg" alt="logo-online-zoo">
+        </a>
+      </div>
+      <nav class="header-nav">
+        <ul class="header-list-link">
+          <li class="header-list-item">
+            <a id='active' href="" class="header-link-about active">About</a>
+          </li>
+          <li class="header-list-item">
+            <a href="pages/map/map.html" class="header-link">Map</a>
+          </li>
+          <li class="header-list-item">
+            <a href="pages/zoos/panda/panda.html" class="header-link">Zoos</a>
+          </li>
+          <li class="header-list-item">
+            <a href="pages/Error_404/error.html" class="header-link">Contact us</a>
+          </li>
+          <li class="header-list-item">
+            <a class="header-link" href="https://www.figma.com/file/aBvQMVmI665DtzprpiniuH/online-zoo?node-id=0%3A1">
+              Design
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="hero-section">
+        <div class="wrapper">
+          <h2 class="hero-section-title">
+            Watch your favorite animal ONLINE
+          </h2>
+          <a class="play-btn-link" href="pages/zoos/panda/panda.html">
+            <i class="fa fa-play play-btn-icon"></i>
+            <p>Play</p>
+          </a>
+        </div>
+      </section>
+    </main>
+ 
+<section class="how-it-works">
+  <div class="wrapper-how-it-works">
+    <h3 class="section-title-how-it-works">How it works</h3>
+    <div class="roundabout-wrapper">
+      <ul class="roundabout-list">
+        <li class="roundabout-item" data-pos="-2">
+          <img class="roundabout-item-img eagle-image" src="assets/images/how-it-works/eagle.jpg" 
+               alt="eagle" width="250" height="350">
+        </li>
+        <li class="roundabout-item" data-pos="-1">
+          <img class="roundabout-item-img tiger-image" src="assets/images/how-it-works/tiger.jpg" 
+               alt="tiger" width="250" height="350">
+        </li>
+        <li class="roundabout-item" data-pos="0">
+          <img class="roundabout-item-img panda-image" src="assets/images/how-it-works/panda.jpg" 
+               alt="panda" width="250" height="350">
+        </li>
+        <li class="roundabout-item" data-pos="1">
+          <img class="roundabout-item-img monkey-image" src="assets/images/how-it-works/monkey.jpg" 
+               alt="monkey" width="250" height="350">
+        </li>
+        <li class="roundabout-item" data-pos="2">
+          <img class="roundabout-item-img elephant-image" src="assets/images/how-it-works/elephant.jpg" 
+               alt="elephant" width="250" height="350">
+        </li>
+      </ul>
+    </div>
+    
+    <p class="how-it-works-text">
+      The application Оnline zoo will allow you to watch zoos' and nature reserves' inhabitants in live. 
+      Currently, under video-surveillance are pandas in China, eagles on Catalina Island (USA), alligators in Florida and gorillas in the Congo. 
+      We are expanding our capabilities and soon online you will meet Arctic snowy owl in Alaska, Penguin in California, Elephant from South Africa and Polar bear from Canada. You will see unique video-shots at any time of the day. If you liked a pet you watch and you want to please it with a delicious treat, you can pay a donation and the animal will receive a surprise from you during feeding hours.
+      We want to thank you for helping the animals and give you 
+        <a class="how-it-works-text-link" href="#">discount coupons</a> from our partners.
+    </p>
+  </div>
+</section>
+
+  <section class="pets">
+    <div class="wrapper">
+      <h3 class="section-title">Pets in zoo</h3>
+      
+      <div class="auto-carousel">
+        <div class="prev" id="prev"></div>
+        <div class="carousel-wrapper" id="carousel-wrapper">
+          
+          <div class="carousel" id="carousel">
+            <div class="carousel-content" id="carousel-content">
+              <div class="carousel-item">
+                <picture>
+                  <source srcset="assets/images/pets-in-zoo/panda.webp" type="image/webp">
+                  <img class="carousel-img" src="assets/images/pets-in-zoo/panda.png" alt="panda bear">
+                </picture>
+                <a href="pages/zoos/panda/panda.html" class="carousel-item__link"></a>
+                <p class="carousel-item__text">Panda, China</p>
+              </div>
+
+              <div class="carousel-item">
+                <picture>
+                  <source srcset="assets/images/pets-in-zoo/bear.webp" type="image/webp">
+                  <img class="carousel-img" src="assets/images/pets-in-zoo/bear.png" alt="polar bear">
+                </picture>
+                <p class="carousel-item__text">Polar bear, Canada</p>
+              </div>
+
+              <div class="carousel-item">
+                <picture>
+                  <source srcset="assets/images/pets-in-zoo/alligator.webp" type="image/webp">
+                  <img class="carousel-img" src="assets/images/pets-in-zoo/alligator.png" alt="alligator">
+                </picture>
+                <a href="pages/zoos/alligator/alligator.html" class="carousel-item__link"></a>
+                <p class="carousel-item__text">Alligator, USA</p>
+              </div>
+
+              <div class="carousel-item">
+                <picture>
+                  <source srcset="assets/images/pets-in-zoo/eagle.webp" type="image/webp">
+                  <img class="carousel-img" src="assets/images/pets-in-zoo/eagle.png" alt="eagle">
+                </picture>
+                <a href="pages/zoos/eagle/eagle.html" class="carousel-item__link"></a>
+                <p class="carousel-item__text">Eagle, USA</p>
+              </div>
+
+              <div class="carousel-item">
+                <picture>
+                  <source srcset="assets/images/pets-in-zoo/gorilla.webp" type="image/webp">
+                  <img class="carousel-img" src="assets/images/pets-in-zoo/gorilla.png" alt="gorilla">
+                </picture>
+                <a href="pages/zoos/gorilla/gorilla.html" class="carousel-item__link"></a>
+                <p class="carousel-item__text">Gorilla, Eastern DRC</p>
+              </div>
+
+              <div class="carousel-item">
+                <picture>
+                  <source srcset="assets/images/pets-in-zoo/owl.webp" type="image/webp">
+                  <img class="carousel-img" src="assets/images/pets-in-zoo/owl.png" alt="polar owl">
+                </picture>
+                <p class="carousel-item__text">Arctic snowy owl, Alaska</p>
+              </div>
+              
+              <div class="carousel-item">
+                <picture>
+                  <source srcset="assets/images/pets-in-zoo/elephant.webp" type="image/webp">
+                  <img class="carousel-img" src="assets/images/pets-in-zoo/elephant.png" alt="elephant">
+                </picture>
+                <p class="carousel-item__text">Arctic snowy owl, Alaska</p>
+              </div>
+              
+              
+              <div class="carousel-item">
+                <picture>
+                  <source srcset="assets/images/pets-in-zoo/penguin.webp" type="image/webp">
+                  <img class="carousel-img" src="assets/images/pets-in-zoo/penguin.png" alt="penguin">
+                </picture>
+                <p class="carousel-item__text">Penguin, USA</p>
+              </div>
+
+              <div class="carousel-item">
+                <picture>
+                  <source srcset="assets/images/pets-in-zoo/panda.webp" type="image/webp">
+                  <img class="carousel-img" src="assets/images/pets-in-zoo/panda.png" alt="panda bear">
+                </picture>
+                <a href="pages/zoos/panda/panda.html" class="carousel-item__link"></a>
+                <p class="carousel-item__text">Panda, China</p>
+              </div>
+
+              <div class="carousel-item">
+                <picture>
+                  <source srcset="assets/images/pets-in-zoo/bear.webp" type="image/webp">
+                  <img class="carousel-img" src="assets/images/pets-in-zoo/bear.png" alt="polar bear">
+                </picture>
+                <p class="carousel-item__text">Polar bear, Canada</p>
+              </div>
+
+              <div class="carousel-item">
+                <picture>
+                  <source srcset="assets/images/pets-in-zoo/alligator.webp" type="image/webp">
+                  <img class="carousel-img" src="assets/images/pets-in-zoo/alligator.png" alt="alligator">
+                </picture>
+                <a href="pages/zoos/alligator/alligator.html" class="carousel-item__link"></a>
+                <p class="carousel-item__text">Alligator, USA</p>
+              </div>
+
+              <div class="carousel-item">
+                <picture>
+                  <source srcset="assets/images/pets-in-zoo/eagle.webp" type="image/webp">
+                  <img class="carousel-img" src="assets/images/pets-in-zoo/eagle.png" alt="eagle">
+                </picture>
+                <a href="pages/zoos/eagle/eagle.html" class="carousel-item__link"></a>
+                <p class="carousel-item__text">Eagle, USA</p>
+              </div>
+
+              <div class="carousel-item">
+                <picture>
+                  <source srcset="assets/images/pets-in-zoo/gorilla.webp" type="image/webp">
+                  <img class="carousel-img" src="assets/images/pets-in-zoo/gorilla.png" alt="gorilla">
+                </picture>
+                <a href="pages/zoos/gorilla/gorilla.html" class="carousel-item__link"></a>
+                <p class="carousel-item__text">Gorilla, Eastern DRC</p>
+              </div>
+
+              <div class="carousel-item">
+                <picture>
+                  <source srcset="assets/images/pets-in-zoo/owl.webp" type="image/webp">
+                  <img class="carousel-img" src="assets/images/pets-in-zoo/owl.png" alt="polar owl">
+                </picture>
+                <p class="carousel-item__text">Arctic snowy owl, Alaska</p>
+              </div>
+              
+              <div class="carousel-item">
+                <picture>
+                  <source srcset="assets/images/pets-in-zoo/elephant.webp" type="image/webp">
+                  <img class="carousel-img" src="assets/images/pets-in-zoo/elephant.png" alt="elephant">
+                </picture>
+                <p class="carousel-item__text">Arctic snowy owl, Alaska</p>
+              </div>
+              
+              
+              <div class="carousel-item">
+                <picture>
+                  <source srcset="assets/images/pets-in-zoo/penguin.webp" type="image/webp">
+                  <img class="carousel-img" src="assets/images/pets-in-zoo/penguin.png" alt="penguin">
+                </picture>
+                <p class="carousel-item__text">Penguin, USA</p>
+              </div>
+            </div>
+          </div>
+          
+          
+        
+          
+        </div>
+        <div class="next" id="next"></div>
+      </div>
+
+      <div class="pet-btn-box">
+        <button type="button" class="pets-btn">
+          <a class="pets-btn-link" href="pages/map/map.html">
+            Choose your favorite
+          </a>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="pay-and-feed">
+    <div class="wrapper">
+      <h3 class="section-title pay-and-feed-title">Pay and feed</h3>
+      <div class="pay-wrapper">
+        <div class="pay-container">
+          <div class="pay-arrows"></div>
+          <div class="pay-and-feed-box">
+            <div class="pay-and-feed-item card">
+              <img class="pay-card" src="assets/images/pay-and-feed/card1.png" alt="card">
+              <img class="pay-bg" src="assets/images/pay-and-feed/bg.jpg" alt="background">
+            </div>
+            <p class="pay-and-feed-text pay-and-feed-text_first">
+              You can pay for a donation to any animal using your Credit/Debit card
+            </p>
+          </div>
+          <div class="pay-and-feed-box">
+            <div class="pay-and-feed-item card">
+              <img class="pay-zoo" src="assets/images/pay-and-feed/zoo1.png" alt="zoo">
+              <img class="pay-bg pay-bg-zoo" src="assets/images/pay-and-feed/bg.jpg" alt="background">
+            </div>
+            <p class="pay-and-feed-text pay-and-feed-text_second">
+              Donations will go to the account of the zoo or nature reserve
+            </p>
+          </div>
+          <div class="pay-and-feed-box">
+            <div class="pay-and-feed-item card">
+              <img class="pay-panda" src="assets/images/pay-and-feed/panda1.png" alt="panda">
+              <img class="pay-bg pay-bg-panda" src="assets/images/pay-and-feed/bg.jpg" alt="background">
+            </div>
+            <p class="pay-and-feed-text pay-and-feed-text_third">
+              The animal will receive a delicious treat during feeding hours
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <div class="testimonials-wrapper">
+      <h3 class="section-title testimonials-title">Testimonials</h3>
+      <div class="testimonials-slider">
+        <div class="testimonials-arrows-left">
+          <img class="arrow-left" src="assets/icons/Vector_left.svg" alt="arrow-left">
+        </div>
+        <div class="testimonials-container">
+          <div class="testimonials-items">
+            <div class="testimonials-info">
+              <div class="info-photo">
+                <img src="assets/images/testimonials/Karen.png" alt="photo">
+              </div>
+              <div class="info-wrapper">
+                <p class="info-name">Karen Maitland</p>
+                <div class="info-donate">+$10</div>
+              </div>
+            </div>
+            <div class="testimonials-text">
+              <p>"Thank you so much for these wonderful live webcams of the eagles on Catalina Island. 
+                Being able to watch them in their natural habitat as opposed to zoos is so wonderful. 
+                I cannot see myself ever being able to come up there to see them in person, so this is 
+                a great substitute. Thank you again."</p>
+            </div>
+          </div>
+
+          <div class="testimonials-items">
+            <div class="testimonials-info">
+              <div class="info-photo">
+                <img src="assets/images/testimonials/Sara.png" alt="photo">
+              </div>
+              <div class="info-wrapper">
+                <p class="info-name">Sara Jones</p>
+                <div class="info-donate">+$13</div>
+              </div>
+            </div>
+            <div class="testimonials-text">
+              <p>"A disability prevents me from enjoying the outdoors and travel like I used to do. 
+                I really enjoy all the live cams and can spend HOURS watching real-time entertainment. 
+                Wild life style!"</p>
+            </div>
+          </div>
+
+          <div class="testimonials-items">
+            <div class="testimonials-info">
+              <div class="info-photo">
+                <img src="assets/images/testimonials/Alex.png" alt="photo">
+              </div>
+              <div class="info-wrapper">
+                <p class="info-name">Alex Barden</p>
+                <div class="info-donate">+$7</div>
+              </div>
+            </div>
+            <div class="testimonials-text">
+              <p>"Here's a huge "thank-you" from New Hampshire - you allow me to travel the world 
+                without ever leaving the comfort of my office chair. Jammies on and coffee cup in hand, 
+                I am Phineas Fogg!!"</p>
+            </div>
+          </div>
+
+          <div class="testimonials-items">
+            <div class="testimonials-info">
+              <div class="info-photo">
+                <img src="assets/images/testimonials/Alene.png" alt="photo">
+              </div>
+              <div class="info-wrapper">
+                <p class="info-name">Alene Ray</p>
+                <div class="info-donate">+$18</div>
+              </div>
+            </div>
+            <div class="testimonials-text">
+              <p>"Thank you for all the knowledge, education, pleasure and happiness you have add to 
+                all our lives at no expense on our part. My humble thanks and gratitude are being wished 
+                for all of you. I want to thank you and feed the animals a small reward"</p>
+            </div>
+          </div>
+          <!-- <div class="testimonials-items">
+            <div class="person-info">
+              <div class="photo">
+                <img src="assets/images/testimonials/Karen.png" alt="Karen's photo">
+              </div>
+              <div class="donation-info">
+                <div class="name">
+                  <p class="name-text">Karen Maitland</p>
+                </div>
+                <div class="money">
+                  <img class="money-img" src="assets/images/testimonials/money.png" alt="money">
+                  <p class="money-text">+$10</p>
+                </div>
+              </div>
+            </div>
+            <p class="testimonials-items-text">
+              "Thank you so much for these wonderful live webcams of the eagles on Catalina Island. 
+              Being able to watch them in their natural habitat as opposed to zoos is so wonderful. 
+              I cannot see myself ever being able to come up there to see them in person, so this is a great substitute. Thank you again."
+            </p>
+          </div>
+
+          <div class="testimonials-items">
+            <div class="person-info">
+              <div class="photo">
+                <img src="assets/images/testimonials/Sara.png" alt="Sara's photo">
+              </div>
+              <div class="donation-info">
+                <div class="name">
+                  <p class="name-text">Sara Jones</p>
+                </div>
+                <div class="money">
+                  <img class="money-img" src="assets/images/testimonials/money.png" alt="money">
+                  <p class="money-text">+$13</p>
+                </div>
+              </div>
+            </div>
+            <p class="testimonials-items-text .testimonials-items-text_second">
+              "A disability prevents me from enjoying the outdoors and travel like I used to do. 
+              I really enjoy all the live cams and can spend HOURS watching real-time entertainment. 
+              Wild life style!"
+            </p>
+          </div>
+
+          <div class="testimonials-items ">
+            <div class="person-info">
+              <div class="photo">
+                <img src="assets/images/testimonials/Alex.png" alt="Alex's photo">
+              </div>
+              <div class="donation-info">
+                <div class="name">
+                  <p class="name-text">Alex Barden</p>
+                </div>
+                <div class="money">
+                  <img class="money-img" src="assets/images/testimonials/money.png" alt="money">
+                  <p class="money-text">+$7</p>
+                </div>
+              </div>
+            </div>
+            <p class="testimonials-items-text">
+              "Here's a huge "thank-you" from New Hampshire - you allow me to travel the world without ever 
+              leaving the comfort of my office chair. Jammies on and coffee cup in hand, I am Phineas Fogg!!"
+            </p>
+          </div>
+
+          <div class="testimonials-items">
+            <div class="person-info">
+              <div class="photo">
+                <img src="assets/images/testimonials/Alene.png" alt="Alene's photo">
+              </div>
+              <div class="donation-info">
+                <div class="name">
+                  <p class="name-text">Alene Ray</p>
+                </div>
+                <div class="money">
+                  <img class="money-img" src="assets/images/testimonials/money.png" alt="money">
+                  <p class="money-text">+$18</p>
+                </div>
+              </div>
+            </div>
+            <p class="testimonials-items-text .testimonials-items-text_second">
+              "Thank you for all the knowledge, education, pleasure and happiness you have add to all our lives 
+              at no expense on our part. My humble thanks and gratitude are being wished for all of you. 
+              I want to thank you and feed the animals a small reward"
+            </p>
+          </div> -->
+        </div>
+        <div class="testimonials-arrows-right">
+          <img class="arrow-right" src="assets/icons/Vector_right.svg" alt="arrow-right">
+        </div>
+      </div>
+      <div class="testimonials-btn-box">
+        <button id="testimonials-btn" class="testimonials-btn feedback-link" type="button">
+          <a class="testimonials-btn-link" href="javascript:void(0)">
+            Leave feedback
+          </a>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-bg"></div>
+    <div class="footer-wrapper">
+
+      <div class="footer-navigation">
+
+        <div class="footer-logo">
+          <a class="footer-logo-link" href="index.html">
+            <img class="footer-logo-img" src="assets/images/logo/logo.svg" alt="logo-online-zoo">
+          </a>
+        </div>
+
+        <div class="footer-btn-box">
+          <button class="footer-btn" name="footer_btn" type="button">
+            <a class="footer-btn-link" href="javascript:void(0)">Donate for volunteers</a>
+          </button>
+        </div>
+        <nav class="footer-nav">
+          <ul class="footer-list-link">
+            <li class="footer-list-item">
+              <a href="" class="footer-link">About</a>
+            </li>
+            <li class="footer-list-item">
+              <a class="footer-link" href="pages/Error_404/error.html">Contact us</a>
+              
+            </li>
+            <li class="footer-list-item">
+              <a class="footer-link" href="pages/map/map.html">Map</a>
+            </li>
+            <li class="footer-list-item">
+              <a class="footer-link feedback-link" href="javascript:void(0)">Feedback</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="social">
+          <a class="social-item-link insta" href="https://www.instagram.com/"></a>
+          <a class="social-item-link facebook" href="https://www.facebook.com/"></a>
+          <a class="social-item-link twitter" href="https://www.twitter.com/"></a>
+          <a class="social-item-link youtube" href="https://www.youtube.com/"></a>
+        </div>
+      </div>
+
+      <div class="footer-copyrights">
+        <div class="footer-copyrights-box">
+          <div class="rs-school tooltip">
+            <img class="rs-school-img" src="assets/icons/rs-school.png" alt="rs-school logo">
+            <span class="tooltip-text">Rolling Scopes School</span>
+          </div>
+          <div class="yem-digital tooltip">
+            <img class="yem-digital-img" src="assets/icons/yem-digital.png" alt="yem-digital logo">
+            <span class="tooltip-text">Yem Digital</span>
+          </div>
+          <div class="footer-btn_pos">
+            <button class="footer-btn_pos-button" name="footer_btn" type="button">
+              <a class="footer-btn_pos-link" href="javascript:void(0)">Donate for volunteers</a>
+            </button>
+          </div>
+        </div>
+        
+        <div class="copyrights-text-box">
+          <p class="copyrights-text">
+            Copyright ©RSSchool <span>and</span> ©Yem Digital 2020 - 2021
+          </p>
+          <p class="copyrights-design">
+            Grigoreva Margarita
+          </p>
+        </div>
+      </div>
+    </div> 
+  </footer>
+
+<div class="cover hidden" id="cover"></div>
+
+</div>
+<div class="feedback hidden" id="feedback">
+  <div class="close" id="close">
+    <img src="assets/icons/close.png" alt="close button">
+  </div>
+  <form action="#" class="feedback_form" name="feedback_form">
+    <input class="input-field feedback_input" type="text" id="nameF" name="nameF" 
+           placeholder="Name" required>
+    <input class="input-field feedback_input" type="email" id="emailF" name="emailF" 
+           placeholder="Email" required>
+    <textarea class="input-field feedback_input" id="feedback-text" name="feedback" 
+              placeholder="Your text here (300 max)" maxlength="300" required></textarea>
+    <button class="input-field feedback_input feedback_btn invalid" id="feedback_btn" 
+           type="submit" value="Submit">Submit</button>
+  </form>
+</div>
+
+<div class="donate-info hidden" id="donate-info">
+  <div class="close" id="close">
+    <img src="assets/icons/close.png" alt="close button">
+  </div>
+  <form action="#" class="donate-info_form" name="donate_front_form">
+    <select name="animal" id="animal" class="select-animal" required>
+      <option value="0" selected disabled></option>
+      <option value="animal">Alligator</option>
+      <option value="animal">Panda</option>
+      <option value="animal">Eagle</option>
+      <option value="animal">Gorilla</option>
+    </select>
+    <div class="sum-donate">
+      <label for="amount"></label>
+      <input class="input-field amount_input" id="amount" type="number" name="amount" 
+             placeholder="Amount" min="1" max="9999" autocomplete="off" required>
+      <select id="currency" class="currency" name="currency">
+        <option value="usd">usd</option>
+        <option value="eur">eur</option>
+      </select>
+    </div>
+    <textarea class="input-field amount_input-text" id="donate-text" name="feedback" 
+              placeholder="Your text here" maxlength="300"></textarea>
+    <button class="feedback_btn donate-info_btn invalid" id="donate-info_btn" disabled>Next</button>
+  </form>
+</div>
+
+
+<div class="donate-card hidden" id="donate-card">
+  <div class="close" id="close">
+    <img src="assets/icons/close.png" alt="close button">
+  </div>
+  <div class="card-front-box">
+    
+    <form action="" class="card-front_form" name="card_front_form">
+
+      <label for="card_number"></label>
+      <input class="input-field input-card" type="number" id="card_number" name="card_number" 
+             placeholder="Card Number">
+  
+      <div class="card-date-box">
+        <label for="card_month"></label>
+        <input class="input-field input-date" type="number" id="card_month" name="card_month" 
+             placeholder="MM">
+        <label for="card_year"></label>
+        <input class="input-field input-date" type="number" id="card_year" name="card_year" 
+             placeholder="YY">
+      </div>
+  
+      <label for="card_owner"></label>
+      <input class="input-field input-card" type="text" id="card_owner" name="card_owner" 
+             placeholder="Сardholder Name">
+      <label for="cvc"></label>
+      <input type="text" class="input-field input-cvc" type="number" id="cvc" name="cvc"
+             placeholder="CVC"> 
+      <button class="feedback_btn card_btn invalid" id="card_btn"
+              type="submit" disabled>Donate</button>
+    </form>
+
+    
+  </div>
+  <div class="card-back-box">
+    <form action="#" class="card-front_form" name="card_front_form">
+      
+    </form>
+  </div>
+  
+</div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

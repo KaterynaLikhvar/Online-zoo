@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Online-zoo</title>
+  </head>
+<body>
+  <div class="wrapper">
+    <header class="header" id="header">
+      <div class="header-container">
+
+        <div class="hamburger-menu">
+          <input id="nav-toggle" type="checkbox" />
+          <label class="nav-btn" for="nav-toggle">
+            <span></span>
+          </label>
+      
+          <ul class="nav-box">
+            <li><a class="nav-item" href="../../index.html">About</a></li>
+            <li><a class="nav-item" href="javascript:void(0)">Map</a></li>
+            <li><a class="nav-item" href="../../pages/zoos/panda/panda.html">Zoos</a></li>
+            <li><a class="nav-item" href="../../pages/Error_404/error.html">Contact us</a></li>
+            <li><a class="nav-item design" href="https://www.figma.com/file/aBvQMVmI665DtzprpiniuH/online-zoo?node-id=0%3A1">Design</a></li>
+          </ul>
+        </div>
+
+        <div class="header-logo">
+          <h1 class="online-zoo">Online Zoo</h1>
+          <a href="../../index.html" class="header-logo-link">
+            <img class="logo-img" src="../../assets/images/logo/logo.svg" alt="logo-online-zoo">
+          </a>
+        </div>
+
+        <nav class="header-nav">
+          <ul class="header-list-link">
+            <li class="header-list-item">
+              <a class="header-link" href="../../index.html">About</a>
+            </li>
+            <li class="header-list-item">
+              <a id='active' class="header-link-map active" href="">Map</a>
+            </li>
+            <li class="header-list-item">
+              <a class="header-link" href="../zoos/alligator/alligator.html">Zoos</a>
+            </li>
+            <li class="header-list-item">
+              <a class="header-link" href="../Error_404/error.html">Contact us</a>
+            </li>
+            <li class="header-list-item">
+              <a class="header-link" href="https://www.figma.com/file/aBvQMVmI665DtzprpiniuH/online-zoo?node-id=0%3A1">
+                Design
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  </div>
+
+  <section class="map-wrapper">
+    <div class="map-container" id="map-container">
+      <div class="map" id="map">
+        <img class="map-img" id="map_img" src="../../assets/images/map/map.png" alt="world map">
+        <p class="country-usa">Usa</p>
+        <p class="country-eastern-drc">Eastern DRC</p>
+        <p class="country-china">China</p> 
+        
+        <div class="eagle">
+          <img class="eagle-location" src="../../assets/icons/location.png" alt="location icon">
+          <p class="map-text eagle-text">eagle</p>
+          <div class="eagle-link-box tooltip-animal" >
+            <a class="alligator-link" href="../zoos/eagle/eagle.html">
+              <img class="alligator-img" src="../../assets/images/map/eagle.png" alt="eagle">
+            </a>
+            <div class="tooltip-text-eagle">EAGLE,<br> California USA
+              <a class="tooltip-btn" href="">Watch online</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="alligator">
+          <img class="alligator-location" src="../../assets/icons/location.png" alt="location icon">
+          <div class="alligator-link-box tooltip-animal" >
+            <a class="alligator-link" href="../zoos/alligator/alligator.html">
+              <img class="alligator-img" src="../../assets/images/map/alligator.png" alt="alligator">
+            </a>
+            <div class="tooltip-text-alligator">ALLIGATOR,<br> Florida USA
+              <a class="tooltip-btn" href="">Watch online</a>
+            </div>
+          </div>
+          <p class="map-text alligator-text">alligator</p>
+        </div>
+        
+        <div class="gorilla">
+          <img class="gorilla-location" src="../../assets/icons/location.png" alt="location icon">
+          <div class="gorilla-link-box tooltip-animal" >
+            <a class="alligator-link" href="../zoos/gorilla/gorilla.html">
+              <img class="alligator-img" src="../../assets/images/map/gorilla.png" alt="gorilla">
+            </a>
+            <div class="tooltip-text-gorilla">GORILLA,<br> Eastern DRC
+              <a class="tooltip-btn" href="">Watch online</a>
+            </div>
+          </div>
+          <p class="map-text gorilla-text">gorilla</p>
+        </div>
+
+        <div class="panda">
+          <img class="panda-location" src="../../assets/icons/location.png" alt="location icon">
+          <div class="panda-link-box tooltip-animal" >
+            <a class="panda-link" href="../zoos/panda/panda.html">
+              <img class="panda-img" src="../../assets/images/map/panda.png" alt="panda">
+            </a>
+            <div class="tooltip-text-panda">PANDA,<br> China
+              <a class="tooltip-btn" href="">Watch online</a>
+            </div>
+          </div>
+          <p class="map-text panda-text">panda</p>
+        </div>
+      </div>
+    </div>
+    <div class="zoom" id="zoom">
+      <button class="zoomOut" id="zoomOut"></button>
+      <button class="zoomIn" id="zoomIn"></button>
+    </div>
+  </section>
+
+  <footer class="footer" id="footer">
+    <div class="footer-container">
+      <img class="footer-img"src="../../assets/images/footer/Footer.png" alt="">
+      <div class="wrapper">
+        <div class="footer-navigation">
+  
+          <div class="footer-logo">
+            <a class="footer-logo-link" href="index.html">
+              <img class="footer-logo-img" src="../../assets/images/logo/logo.svg" alt="logo-online-zoo">
+            </a>
+          </div>
+  
+          <div class="footer-btn-box">
+            <button class="footer-btn" name="footer_btn" type="button">
+              <a class="footer-btn-link" href="javascript:void(0)">Donate for volunteers</a>
+            </button>
+          </div>
+          <nav class="footer-nav">
+            <ul class="footer-list-link">
+              <li class="footer-list-item">
+                <a href="" class="footer-link">About</a>
+              </li>
+              <li class="footer-list-item">
+                <a class="footer-link" href="../../pages/Error_404/error.html">Contact us</a>
+                
+              </li>
+              <li class="footer-list-item">
+                <a class="footer-link" href="../../pages/map/map.html">Map</a>
+              </li>
+              <li class="footer-list-item">
+                <a class="footer-link feedback-link" href="javascript:void(0)">Feedback</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="social">
+            <a class="social-item-link insta" href="https://www.instagram.com/"></a>
+            <a class="social-item-link facebook" href="https://www.facebook.com/"></a>
+            <a class="social-item-link twitter" href="https://www.twitter.com/"></a>
+            <a class="social-item-link youtube" href="https://www.youtube.com/"></a>
+          </div>
+        </div>
+  
+        <div class="footer-copyrights">
+          <div class="footer-copyrights-box">
+            <div class="rs-school tooltip">
+              <img class="rs-school-img" src="../../assets/icons/rs-school.png" alt="rs-school logo">
+              <span class="tooltip-text">Rolling Scopes School</span>
+            </div>
+            <div class="yem-digital tooltip">
+              <img class="yem-digital-img" src="../../assets/icons/yem-digital.png" alt="yem-digital logo">
+              <span class="tooltip-text">Yem Digital</span>
+            </div>
+            <div class="footer-btn_pos">
+              <button class="footer-btn_pos-button" name="footer_btn" type="button">
+                <a class="footer-btn_pos-link" href="javascript:void(0)">Donate for volunteers</a>
+              </button>
+            </div>
+          </div>
+          
+          <div class="copyrights-text-box">
+            <p class="copyrights-text">
+              Copyright ©RSSchool <span>and</span> ©Yem Digital 2020 - 2021
+            </p>
+            <p class="copyrights-design">
+              Grigoreva Margarita
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="cover hidden" id="cover"></div>
+
+  <div class="feedback hidden" id="feedback">
+    <div class="close" id="close">
+      <img src="../../assets/icons/close.png" alt="close button">
+    </div>
+    <form action="#" class="feedback_form" name="feedback_form">
+      <input class="input-field feedback_input" type="text" id="nameF" name="nameF" 
+             placeholder="Name" required>
+      <input class="input-field feedback_input" type="email" id="emailF" name="emailF" 
+             placeholder="Email" required>
+      <textarea class="input-field feedback_input" id="feedback-text" name="feedback" 
+                placeholder="Your text here (300 max)" maxlength="300" required></textarea>
+      <button class="input-field feedback_input feedback_btn invalid" id="feedback_btn" 
+             type="submit" value="Submit">Submit</button>
+    </form>
+  </div>
+  
+  <div class="donate-info hidden" id="donate-info">
+    <div class="close" id="close">
+      <img src="../../assets/icons/close.png" alt="close button">
+    </div>
+    <form action="#" class="donate-info_form" name="donate_front_form">
+      <select name="animal" id="animal" class="select-animal" required>
+        <option value="0" selected disabled></option>
+        <option value="animal">Alligator</option>
+        <option value="animal">Panda</option>
+        <option value="animal">Eagle</option>
+        <option value="animal">Gorilla</option>
+      </select>
+      <div class="sum-donate">
+        <label for="amount"></label>
+        <input class="input-field amount_input" id="amount" type="number" name="amount" 
+               placeholder="Amount" min="1" max="9999" autocomplete="off" required>
+        <select id="currency" class="currency" name="currency">
+          <option value="usd">usd</option>
+          <option value="eur">eur</option>
+        </select>
+      </div>
+      <textarea class="input-field amount_input-text" id="donate-text" name="feedback" 
+                placeholder="Your text here" maxlength="300"></textarea>
+      <button class="feedback_btn donate-info_btn invalid" id="donate-info_btn" disabled>Next</button>
+    </form>
+  </div>
+  
+  
+  <div class="donate-card hidden" id="donate-card">
+    <div class="close" id="close">
+      <img src="../../assets/icons/close.png" alt="close button">
+    </div>
+    <div class="card-front-box">
+      
+      <form action="" class="card-front_form" name="card_front_form">
+  
+        <label for="card_number"></label>
+        <input class="input-field input-card" type="number" id="card_number" name="card_number" 
+               placeholder="Card Number">
+    
+        <div class="card-date-box">
+          <label for="card_month"></label>
+          <input class="input-field input-date" type="number" id="card_month" name="card_month" 
+               placeholder="MM">
+          <label for="card_year"></label>
+          <input class="input-field input-date" type="number" id="card_year" name="card_year" 
+               placeholder="YY">
+        </div>
+    
+        <label for="card_owner"></label>
+        <input class="input-field input-card" type="text" id="card_owner" name="card_owner" 
+               placeholder="Сardholder Name">
+        <label for="cvc"></label>
+        <input type="text" class="input-field input-cvc" type="number" id="cvc" name="cvc"
+               placeholder="CVC"> 
+        <button class="feedback_btn card_btn invalid" id="card_btn"
+                type="submit" disabled>Donate</button>
+      </form>
+    </div>
+    <div class="card-back-box">
+      <form action="#" class="card-front_form" name="card_front_form"></form>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

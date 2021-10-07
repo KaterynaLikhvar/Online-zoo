@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+.error-section {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  min-height: 100%;
+}
+.error-wrapper {
+  padding: 0 18px;
+  margin: 0 auto;
+  max-width: 1160px;
+  overflow: hidden;
+}
+.error-box {
+  position: relative;
+  margin-top: 28%;
+}
+
+.error-img {
+  display: block;
+  max-width: 100%;
+}
+.error-text {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  bottom: 110px;
+  font-family: 'Bebas Neue';
+  font-style: normal;
+  font-weight: normal;
+}
+.error-title {
+  margin: 0;
+  font-size: 4.375rem;
+  line-height: 70px;
+  color: #333333;
+  text-transform: uppercase;
+}
+.error-link {
+  padding-top: 15px;
+  padding-bottom: 2px;
+  text-decoration: none;
+  font-size: 1.25rem;
+  line-height: 20px;
+  color: #59C3FB;
+}
+.error-link:hover {
+  text-decoration: underline;
+}
+@media (max-width: 1200px) {
+  .error-box {
+    margin-top: 50px;
+  }
+}
+@media (max-width: 640px) {
+  .error-box {
+    margin-top: 109px;
+  }
+}
+@media (max-width: 639px) {
+  .error-box {
+    margin-top: 109px;
+  }
+  .error-text {
+    bottom: 50px;
+  }
+  .error-title {
+    font-size: 2.5rem;
+    line-height: 55px;
+  }
+  .error-link {
+    padding-top: 3px;
+    padding-bottom: 20px;
+    font-size: 1rem;
+    line-height: 20px;
+  }
+}
+@media (max-width: 320px) {
+  .error-box {
+    margin-top: 136px;
+  }
+  .error-img {
+    max-width: 260px;
+  }
+  
+}
