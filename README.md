@@ -1,2 +1,10 @@
 # Online-zoo   
-https://katerynalikhvar.github.io/Online-zoo/
+
+In this project I mastered:
+* Pop ups and form validation
+* Image carousel
+* Map with drag'n'drop and scaling
+* Image slider
+* Dropdowns
+
+You can run this project just tap a [link](https://katerynalikhvar.github.io/Online-zoo/)
