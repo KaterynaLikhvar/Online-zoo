@@ -1,4 +1,5 @@
 # Online-zoo   
+This is an online zoo that allows you to see pets in any of the zoos or in the wild, where there are live cameras.
 
 In this project I mastered:
 * Pop ups and form validation
